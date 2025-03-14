@@ -6,6 +6,10 @@
 body {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,6 +37,80 @@ nav {
             border-radius: 0.5rem;
             outline: none;
             border: none;
+            width: 18rem;
         }
+        button {
+            width: 5rem;
+            padding: 0.5rem;
+            background: green;
+            border: transparent;
+            outline: none;
+            color: black;
+            border-radius: 4px;
+        }
+    }
+    z-index: 2;
+}
+
+#home {
+    min-height: 100vh !important;
+    width: 100% !important;
+    background-image: url("./home.jpg");
+    background-size: cover;
+}
+
+section#mainHome {
+    background: transparent; /* fallback for old browsers */
+    background-image: linear-gradient(
+        to right,
+        #07604d,
+        transparent,
+        transparent
+    );
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    align-items: flex-baseline;
+    padding: 8rem;
+    .homeTitle {
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 5.5rem;
+    }
+    .home--desc {
+        width: 40%;
+    }
+    .home--intro {
+        position: relative;
+        top: 50px;
+    }
+}
+
+.aboutUs {
+    background-image: url("./about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .about--desc {
+        padding: 3rem 5rem;
+        height: 80vh;
+        line-height: 20px;
+        div {
+            padding: 0.5rem 0rem;
+        }
+    }
+}
+
+.contact {
+    background: url("./contact.jpg");
+    background-size: cover;
+    position: relative;
+    .contact--desc {
+        padding: 0 2rem;
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        width: 50%;
     }
 }
