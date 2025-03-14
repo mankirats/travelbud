@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Travel Bud</title>
-</head>
-<body>
-    <nav>
-        <div id="appName">Travel Bud</div>
-        <div id="navLinks">
-            <span>Home</span>
-            <span>About Us</span>
-            <span>Contact Us</span>
-        </div>
-        <div id="search">
-            <span><input type="text" name="" id=""></span>
-            <span><button type="submit">Search</button></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Travel Bud</title>
+    </head>
+    <body id="home">
+        <nav>
+            <div id="appName">Travel Bud</div>
+            <div id="navLinks">
+                <a href="./index.html">
+                    <span>Home</span>
+                </a>
+                <a href="./about.html">
+                    <span>About Us</span>
+                </a>
+                <a href="./contact.html">
+                    <span>Contact Us</span>
+                </a>
+            </div>
+            <div id="search">
+                <span
+                    ><input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Enter Location"
+                /></span>
 
-        </div>
-    </nav>
-</body>
+                <span><button type="submit">Search</button></span>
+            </div>
+        </nav>
+        <section id="mainHome">
+            <div class="home--desc">
+                <div class="homeTitle">
+                    EXPLORE <br />
+                    HOTELS <br />ANYWHERE
+                </div>
+                <span class="home--intro">
+                    Discover the ultimate hotel booking experience, where you
+                    can compare prices, explore a wide variety of
+                    accommodations, and secure your perfect stay at the best
+                    rates — all in one convenient platform.
+                </span>
+            </div>
+        </section>
+        <script src="./index.js"></script>
+    </body>
 </html>
